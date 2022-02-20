@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh ssh ubuntu@65.0.12.228 <<EOF
+ cd /Data/nodejs-hello-world
+ git pull
+ npm install — production
+ pm2 restart 0
+ exit
+EOF
